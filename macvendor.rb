@@ -1,3 +1,4 @@
+# Formula for Homebrew (https://brew.sh)
 class Macvendor < Formula
   desc "CLI tool which looks up a given MAC Address on macvendors.com"
   homepage "https://github.com/tuxotaku/macvendor"

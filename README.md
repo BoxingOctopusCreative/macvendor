@@ -22,9 +22,10 @@ CLI tool which looks up hardware vendor names for network devices based on the m
 
 ### Via Homebrew
 
-*Note: Official Homebrew support is pending. Until then feel free to copy the `macvendor.rb` formula in this repo to `/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/macvendor.rb` on your Mac.*
-
-`$ brew install macvendor`
+```bash
+$ brew tap tuxotaku/taptastic
+$ brew install macvendor
+```
 
 ## Usage
 

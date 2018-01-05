@@ -21,12 +21,10 @@ func getMac() {
 	mvAPI := "https://api.macvendors.com/" + *MacAddr
 	resp, _ := http.Get(mvAPI)
 	body, err := ioutil.ReadAll(resp.Body)
-
+	defer resp.Body.Close()
 	if err != nil {
-		defer resp.Body.Close()
 		fmt.Printf("%s", err)
 	} else {
-		defer resp.Body.Close()
 		fmt.Printf("%s", body)
 	}
 }

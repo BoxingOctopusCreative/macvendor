@@ -22,8 +22,8 @@ release-linux:
 	env GOOS=linux env GOARCH=386 go build $(BUILD_FLAGS) -o $(BUILD_DIR)/$(BASENAME)-linux-386
 
 release-windows:
-	env GOOS=windows env GOARCH=amd64 go build $(BUILD_FLAGS) -o $(BUILD_DIR)/$(BASENAME)-windows-amd64
-	env GOOS=windows env GOARCH=386 go build $(BUILD_FLAGS) -o $(BUILD_DIR)/$(BASENAME)-windows-386
+	env GOOS=windows env GOARCH=amd64 go build $(BUILD_FLAGS) -o $(BUILD_DIR)/$(BASENAME)-windows-amd64.exe
+	env GOOS=windows env GOARCH=386 go build $(BUILD_FLAGS) -o $(BUILD_DIR)/$(BASENAME)-windows-386.exe
 
 release-darwin:
 	env GOOS=darwin env GOARCH=amd64 go build $(BUILD_FLAGS) -o $(BUILD_DIR)/$(BASENAME)-darwin-amd64

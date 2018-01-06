@@ -24,10 +24,10 @@ func getMac() {
 
 	if err != nil {
 		defer resp.Body.Close()
-		fmt.Printf("%s", err)
+		fmt.Printf("%s \n", err)
 	} else {
 		defer resp.Body.Close()
-		fmt.Printf("%s", body)
+		fmt.Printf("%s \n", body)
 	}
 }
 
